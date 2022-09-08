@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		42F426D11C6623C5001FED46 /* RxWebKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F426D01C6623C5001FED46 /* RxWebKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42F426D61C6623C5001FED46 /* RxWebKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F426CE1C6623C5001FED46 /* RxWebKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		42F426DC1C662CF9001FED46 /* Rx+WebKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F426DB1C662CF9001FED46 /* Rx+WebKit.swift */; };
+		690EE9DF28C9FDE20055FC35 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 690EE9DE28C9FDE20055FC35 /* RxCocoa */; };
+		690EE9E128C9FDE20055FC35 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 690EE9E028C9FDE20055FC35 /* RxRelay */; };
+		690EE9E328C9FDE20055FC35 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 690EE9E228C9FDE20055FC35 /* RxSwift */; };
 		C4135FFE22875FBE0061933C /* RxWebKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB7D5322874EE700FB8D99 /* RxWebKitTests.swift */; };
 		C4136011228764840061933C /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4D323B3228748A0004B05A5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C4136012228764840061933C /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4D323B2228748A0004B05A5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -40,12 +43,6 @@
 		EFC27F84246D7E9C0093D8B3 /* RxWebKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB7D5322874EE700FB8D99 /* RxWebKitTests.swift */; };
 		EFC27F85246D7E9C0093D8B3 /* ForwardsEventsBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA6B06228AB1680088A7A3 /* ForwardsEventsBehavior.swift */; };
 		EFC27F86246D7E9C0093D8B3 /* HasEventsBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41360192288135F0061933C /* HasEventsBehavior.swift */; };
-		EFC27F96246D7F160093D8B3 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC27F95246D7F160093D8B3 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFC27F98246D7F1A0093D8B3 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC27F97246D7F1A0093D8B3 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFC27F9A246D7F220093D8B3 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC27F99246D7F220093D8B3 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFC27F9C246D7F290093D8B3 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC27F9B246D7F290093D8B3 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFC27F9E246D7F2D0093D8B3 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC27F9D246D7F2D0093D8B3 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFC27FA0246D7F310093D8B3 /* RxTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC27F9F246D7F300093D8B3 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F68CEB9E22521B1D00498607 /* InvokeJSFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68CEB9D22521B1D00498607 /* InvokeJSFunctionViewController.swift */; };
 		F68CEBA022521B2B00498607 /* ObservingJSEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68CEB9F22521B2B00498607 /* ObservingJSEventViewController.swift */; };
 		F6D7DD0D224F62860066C90F /* RxWKUserContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D7DD0C224F62860066C90F /* RxWKUserContentController.swift */; };
@@ -112,12 +109,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EFC27FA0246D7F310093D8B3 /* RxTest.framework in Embed Frameworks */,
-				EFC27F9E246D7F2D0093D8B3 /* RxSwift.framework in Embed Frameworks */,
-				EFC27F9C246D7F290093D8B3 /* RxRelay.framework in Embed Frameworks */,
-				EFC27F96246D7F160093D8B3 /* Nimble.framework in Embed Frameworks */,
-				EFC27F98246D7F1A0093D8B3 /* Quick.framework in Embed Frameworks */,
-				EFC27F9A246D7F220093D8B3 /* RxCocoa.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,12 +154,6 @@
 		C4D323B3228748A0004B05A5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		C4D323B4228748A0004B05A5 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		EFC27F93246D7E9C0093D8B3 /* RxWebKitTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxWebKitTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFC27F95246D7F160093D8B3 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
-		EFC27F97246D7F1A0093D8B3 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
-		EFC27F99246D7F220093D8B3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
-		EFC27F9B246D7F290093D8B3 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/Mac/RxRelay.framework; sourceTree = "<group>"; };
-		EFC27F9D246D7F2D0093D8B3 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
-		EFC27F9F246D7F300093D8B3 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/Mac/RxTest.framework; sourceTree = "<group>"; };
 		F68CEB9D22521B1D00498607 /* InvokeJSFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvokeJSFunctionViewController.swift; sourceTree = "<group>"; };
 		F68CEB9F22521B2B00498607 /* ObservingJSEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservingJSEventViewController.swift; sourceTree = "<group>"; };
 		F6D7DD0C224F62860066C90F /* RxWKUserContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxWKUserContentController.swift; sourceTree = "<group>"; };
@@ -186,6 +171,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				690EE9E328C9FDE20055FC35 /* RxSwift in Frameworks */,
+				690EE9E128C9FDE20055FC35 /* RxRelay in Frameworks */,
+				690EE9DF28C9FDE20055FC35 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,12 +210,6 @@
 		42F4268E1C66200D001FED46 = {
 			isa = PBXGroup;
 			children = (
-				EFC27F9F246D7F300093D8B3 /* RxTest.framework */,
-				EFC27F9D246D7F2D0093D8B3 /* RxSwift.framework */,
-				EFC27F9B246D7F290093D8B3 /* RxRelay.framework */,
-				EFC27F99246D7F220093D8B3 /* RxCocoa.framework */,
-				EFC27F97246D7F1A0093D8B3 /* Quick.framework */,
-				EFC27F95246D7F160093D8B3 /* Nimble.framework */,
 				42F426991C66200D001FED46 /* Example */,
 				733B51F3D0F2B4B1E9A99FDC /* Frameworks */,
 				42F426981C66200D001FED46 /* Products */,
@@ -362,6 +344,11 @@
 			dependencies = (
 			);
 			name = RxWebKit;
+			packageProductDependencies = (
+				690EE9DE28C9FDE20055FC35 /* RxCocoa */,
+				690EE9E028C9FDE20055FC35 /* RxRelay */,
+				690EE9E228C9FDE20055FC35 /* RxSwift */,
+			);
 			productName = RxWebKit;
 			productReference = 42F426CE1C6623C5001FED46 /* RxWebKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -444,6 +431,11 @@
 				Base,
 			);
 			mainGroup = 42F4268E1C66200D001FED46;
+			packageReferences = (
+				690EE9DD28C9FDE20055FC35 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				690EE9E628C9FE170055FC35 /* XCRemoteSwiftPackageReference "Quick" */,
+				690EE9E928C9FE450055FC35 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = 42F426981C66200D001FED46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -723,7 +715,10 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mokumoku.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -739,11 +734,15 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mokumoku.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -760,8 +759,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/RxWebKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mokumoku.RxWebKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -785,12 +788,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/RxWebKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mokumoku.RxWebKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -814,8 +822,15 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RxWebKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = bobgodwinx.RxWebKitTests;
@@ -844,14 +859,22 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RxWebKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = bobgodwinx.RxWebKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -872,8 +895,15 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RxWebKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = bobgodwinx.RxWebKitTests;
@@ -901,14 +931,22 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RxWebKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = bobgodwinx.RxWebKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -963,6 +1001,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		690EE9DD28C9FDE20055FC35 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		690EE9E628C9FE170055FC35 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		690EE9E928C9FE450055FC35 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		690EE9DE28C9FDE20055FC35 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 690EE9DD28C9FDE20055FC35 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		690EE9E028C9FDE20055FC35 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 690EE9DD28C9FDE20055FC35 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		690EE9E228C9FDE20055FC35 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 690EE9DD28C9FDE20055FC35 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 42F4268F1C66200D001FED46 /* Project object */;
 }
